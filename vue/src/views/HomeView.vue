@@ -1,17 +1,18 @@
 <template>
   <div class="cardie">
-    <DestCard v-for="destination in destinations" 
-    :key="destination.name"
-    :Destination="destination"/>
+    <DestCard v-for="bedthing in bedthings" 
+    :key="bedthing.name"
+    :bedthing="bedthings"/>
   </div>
 </template>
 
 <script setup>
 import DestCard from "@/components/DestCard.vue";
-const ingredients =[
+const bedthings =[
         {
-          name: "",
-          price: 0,
+          name: "platform bed frame",
+          price: 100,
+          img: '../assets/platformbedframe.webp',
 
 
         },
