@@ -27,7 +27,7 @@ img{
     object-fit: cover;
 }
 .cards{
-    background-color: rgb(251, 245, 236);
+    background-color: rgb(234, 234, 234);
     align-items: center;
     justify-content: center;
     padding: 5px;
