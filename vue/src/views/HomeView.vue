@@ -11,12 +11,12 @@ import DestCard from "@/components/DestCard.vue";
 const bedthings =[
         {
           name: "platform bed frame",
-          price: 300,
-          img: '../public/imgs/platformbedframe.webp',
+          price: 100,
+          img: '/imgs/platformbedframe.webp',
         },
         {
-          name: "floor bed",
-          price: 200,
+          name: "floor bed frame",
+          price: 100,
           img: 'https://m.media-amazon.com/images/I/61KSHVmnt1L._AC_UF894,1000_QL80_.jpg',
         },
         {
@@ -36,6 +36,8 @@ const bedthings =[
 <style scoped>
 .cardie{
   height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 </style>

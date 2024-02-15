@@ -15,14 +15,11 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+
 header {
   line-height: 1.5;
   max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+  width: 300px;
 }
 
 nav {
@@ -60,12 +57,11 @@ nav a:first-of-type {
   .logo {
     margin: 0 2rem 0 0;
   }
-
-  header .wrapper {
+/*  .wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
-  }
+  } */
 
   nav {
     text-align: left;
