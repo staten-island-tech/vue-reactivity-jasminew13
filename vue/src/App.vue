@@ -6,8 +6,6 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper">
       <h1>make your bed!</h1>
-      <nav>
-      </nav>
     </div>
   </header>
 

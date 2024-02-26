@@ -4,7 +4,7 @@
       <img :src="bedthing.img" alt="bedthing.name"/>
       <h2>{{ bedthing.name }}</h2>
       <h3>${{ bedthing.price }}</h3>
-      <button @click="increment" >add {{ clicked }}</button> 
+      <button v-on:click="$emit('card')" @click="increment" >add {{ clicked }}</button> 
   </div>
       
   </template>
@@ -12,18 +12,20 @@
   <script setup>
   import { ref } from "vue";
   const props = defineProps ({
-    bedthing: Object,
+    cart: Array,
+     bedthing: Object,
+    emits: ['card']
   })
   //clicker logic
   const clicked = ref(0);
   function increment(){
     clicked.value++;
   }
+  {
 
-  function addcart (){
-    increment
-    
   }
+
+  
   </script>
 
 <style scoped>
@@ -40,10 +42,7 @@ img{
     margin: 5px;
     width: 325px;
 }
-.container{
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 
 </style>
