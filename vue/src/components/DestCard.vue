@@ -4,7 +4,7 @@
       <img :src="bedthing.img" alt="bedthing.name"/>
       <h2>{{ bedthing.name }}</h2>
       <h3>${{ bedthing.price }}</h3>
-      <button @click="addToCart(bedthing)" >add to card</button> 
+      <button v-on:click="$emit(card)">add to cart</button> 
   </div>
       
   </template>
@@ -13,7 +13,7 @@
   //import { ref } from "vue";
   const props = defineProps ({
     cart: Array,
-     bedthing: Object,
+    bedthing: Object,
     emits: ['card']
   })
   

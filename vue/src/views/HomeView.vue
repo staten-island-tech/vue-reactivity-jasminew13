@@ -31,14 +31,13 @@ const bedthings =[
         },
 
       ]
-      export {bedthings};
 </script>
 
 <style scoped>
 .cardie{
-  height: 40vh;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 </style>
