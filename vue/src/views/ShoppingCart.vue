@@ -1,5 +1,4 @@
 <template>
-
     <h2 class="header">SHOPPING CART</h2>
     <cart class="ShoppingCart" :cart="this.cart" :total="this.total"> </cart>
 </template>
@@ -7,25 +6,26 @@
 export { props } from "DestCard.vue"
 import { bedthings } from "./HomeView.vue" 
 export default {
-    name: 'DestCard',
-    props: ['bedthing'],
+    props: ['bedthings'],
     data() {
       return {}
     },
-    methods: {
+    emits: {
       addToCart(bedthing) {
-        this.$emit('adding', bedthing)
+        this.$emit('cart', bedthing)
       }
     },
     emptycart(){
         this.cart= [];
         this.total = 0;
-    }
+    },
   }
+
 </script>
 <style scoped>
 
 .ShoppingCart{
-    width: 40px;
+  width: 50rem;
 }
+
 </style>
