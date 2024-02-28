@@ -31,6 +31,7 @@ const bedthings =[
         },
 
       ]
+      export {bedthings};
 </script>
 
 <style scoped>
