@@ -1,7 +1,7 @@
 <template>
 
     <h2 class="header">SHOPPING CART</h2>
-    <cart :cart="this.cart" :total="this.total"> </cart>
+    <cart class="ShoppingCart" :cart="this.cart" :total="this.total"> </cart>
 </template>
 <script>
 export { props } from "DestCard.vue"
@@ -25,6 +25,7 @@ export default {
 </script>
 <style scoped>
 
-
-
+.ShoppingCart{
+    width: 40px;
+}
 </style>
