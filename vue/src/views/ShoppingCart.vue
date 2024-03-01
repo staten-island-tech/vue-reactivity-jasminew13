@@ -6,13 +6,13 @@
 export { props } from "DestCard.vue"
 import { bedthings } from "./HomeView.vue" 
 export default {
-    props: ['bedthings'],
+    props: ['bedthings', 'cart'],
     data() {
       return {}
     },
     emits: {
-      addToCart(bedthing) {
-        this.$emit('cart', bedthing)
+      addToCart(e) {
+        this.$emit('cart', e)
       }
     },
     emptycart(){
@@ -26,6 +26,10 @@ export default {
 
 .ShoppingCart{
   width: 50rem;
+  background-color: brown;
+}
+.header{
+  line-height: 1.5%;
 }
 
 </style>

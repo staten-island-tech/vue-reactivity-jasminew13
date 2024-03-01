@@ -3,21 +3,15 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <h1>make your bed!</h1>
 
-    </div>
-  </header>
-
-  <RouterView />
+  <RouterView />  
 </template>
 
 <style scoped>
 
 header {
   line-height: 1.5;
-  width: 300px;
+
 }
 
 

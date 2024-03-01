@@ -3,6 +3,9 @@
     <DestCard v-for="bedthing in bedthings" 
     :key="bedthing.name"
     :bedthing="bedthing"/>
+    <ShoppingCart v-for="bedthing in bedthings" 
+    :key="bedthing.name"
+    :bedthing="bedthing"/>
   </div>
 </template>
 

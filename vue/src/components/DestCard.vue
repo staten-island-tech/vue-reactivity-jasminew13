@@ -1,10 +1,14 @@
 
  <template>
+  <div>
+    <h2 class="header">SHOPPING CART</h2>
+    <cart class="ShoppingCart" :cart="this.cart" :total="this.total"> </cart>
+  </div>
     <div class="cards">
       <img :src="bedthing.img" alt="bedthing.name"/>
       <h2>{{ bedthing.name }}</h2>
       <h3>${{ bedthing.price }}</h3>
-      <button v-on:click="$emit(card)">add to cart</button> 
+      <button v-on:click=add>add to cart</button> 
   </div>
       
   </template>
@@ -16,7 +20,9 @@
     bedthing: Object,
     emits: ['card']
   })
-  
+  function add(){
+    console.log(DestCard);
+  }
   </script>
 
 <style scoped>
@@ -33,7 +39,4 @@ img{
     margin: 5px;
     width: 325px;
 }
-
-
-
 </style>
