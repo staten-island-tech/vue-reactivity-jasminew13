@@ -21,7 +21,7 @@
     emits: ['card']
   })
   function add(){
-    console.log(DestCard);
+    console.log(bedthing.name);
   }
   </script>
 
